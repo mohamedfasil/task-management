@@ -1,0 +1,109 @@
+@import "bootstrap.scss";
+body{
+	margin-top: 100px;
+	background:#0B273F;
+}
+.navbar-inverse{
+	background-color: #337ab7;
+}
+h1.navbar-header{
+	margin: 0;
+	a.navbar-brand{
+		color: #fff;
+	}
+}
+footer{
+	margin-top: 50px;
+}
+.panel-heading{
+	padding: 7px 15px;
+	h2{
+		margin: 0;
+		font-size: 23px;
+	}	
+} 
+.panel{
+	background:#ccc;
+}
+.panel-body{
+	padding-bottom: 0;min-height: 150px;
+	.form-control{
+		margin-bottom: 15px;
+	}
+	.sub-section{
+		border:1px solid #aaa;
+		padding: 10px;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		background: #fff;
+		a.pull-right{
+			margin-left: 10px;
+			display: none;
+		}
+		button.btn{
+			margin-right: 10px;
+		}
+		h4{
+				margin-top: 0px;
+		}
+		&.task-section{
+			
+			&.placeholder-section{
+				min-height: 150px;
+				display: none;
+				border:2px dashed #ccc;
+			}
+		}
+		&:hover{
+			a.pull-right{
+				display: inline-block;
+			}
+		}
+		.label{
+			font-weight: normal;
+			padding: .3em .6em .4em;
+			font-size: 80%;
+			line-height: 1.42857143;
+			color: #333;
+		}
+		input[type="text"]{
+			font-weight: bold;
+		}
+	}
+}
+.lists{
+	&.over{
+		.panel-body{
+			.task-section{
+				&.placeholder-section{
+					display: block;
+				}
+			}
+		}
+	}
+}
+*[draggable=true] {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+	cursor: move;
+}
+*:-khtml-drag {
+  background-color: rgba(238,238,238, 0.5);
+}
+
+.overflow{
+	overflow: auto;
+}
+.task-section{
+	background: white;
+	p{
+		min-height: 24px;
+	}
+	&.over{
+		border:2px dashed #ccc;
+	}
+}
